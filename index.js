@@ -29,7 +29,7 @@ function gerarFaturaStr (fatura, pecas) {
       default:
           throw new Error(`Peça desconhecia: ${peca.tipo}`);
       }
-  
+      
       // créditos para próximas contratações
       creditos += Math.max(apre.audiencia - 30, 0);
       if (peca.tipo === "comedia") 
